@@ -1,48 +1,75 @@
 <!DOCTYPE html>
-
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/css/homestyles.css">
-    </head>
-    <body>
-           
-    <div>
-        <!-- Navigation Buttons-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>INFS-3800 Website</title>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Navigation Menu -->
         <nav class="main-nav">
             <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="#">Picture Gallery</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Reports</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pictures.html">Picture Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="reports.html">Reports</a></li>
             </ul>
         </nav>
-        
-        <!-- Top section with Image-->
-        <section>
-            <h1>Web Dev is Awesome...</h1>
-        </section>
 
-        <!-- Section with info cards-->
-        <section>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur maiores laborum ipsam incidunt veritatis voluptatum doloremque pariatur sapiente magnam magni? Alias facilis repellendus beatae praesentium quod adipisci temporibus. Porro quos molestiae laborum iste asperiores, beatae assumenda consequuntur deserunt accusamus ea! Quisquam, deserunt similique blanditiis sint perferendis laudantium aut, nemo unde magni officiis culpa libero, numquam distinctio ea alias suscipit mollitia maxime dicta ullam? Voluptate accusamus a cupiditate vel aspernatur repellendus aliquam nihil vitae ratione, rem consectetur esse illo cum enim. Voluptates, ad! Amet, animi recusandae! Cum voluptas enim provident sapiente hic in quos dignissimos cupiditate! Voluptatem hic aliquid qui cum necessitatibus animi repellat odio, assumenda amet facere vitae earum iste quod fugit asperiores, quisquam esse perferendis eligendi voluptate pariatur saepe quidem libero dolorum. Eaque aspernatur voluptas quod autem hic, quae sequi exercitationem mollitia nihil asperiores libero sint enim sapiente veritatis quam, assumenda harum facere dignissimos praesentium officia rerum. Optio, quo!</p>
-        </section>
-
-        <!-- Information section-->
-        <section>
-            <img src="https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Person Coding">
-            <h2>Want to learn more?</h2>
-            <p>Regardless of how much a person learns about Web Development, the technologies is always changing. It's important that we understand that Web Development is a journey not a destination.</p>
-        </section>
-
-        <!-- Footer-->
-        <footer>
+        <!-- Top page container-->
+        <section class="top-container">
+            <header class="showcase">
+              <h1>Web Dev is awesome...</h1>
+            </header>
+            
+          </section>
+      
+          <!-- Boxes Section -->
+          <section class="boxes">
+            <div class="box">
+              <i class="material-icons" id="boxicon">person</i>
+              <h3>UI/UX</h3>
+              <p>User Interface and User Design are critical to a quality web experience.</p>
+            </div>
+            <div class="box">
+                <i class="material-icons" id="boxicon">edit</i>
+              <h3>Editors</h3>
+              <p>What editor or IDE do you feel works best for you?</p>
+            </div>
+            <div class="box">
+                <i class="material-icons" id="boxicon">file_copy</i>
+              <h3>HTML</h3>
+              <p>Have you found HTML and CSS to be easier than you thought?</p>
+            </div>
+            <div class="box">
+                <i class="material-icons" id="boxicon">email</i>
+              <h3>Sources</h3>
+              <p>Where are the resources that can help me find the stuff I need?</p>
+            </div>
+          </section>
+      
+          <!-- Info Section -->
+          <section class="info">
+            <img src="https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+            <div>
+              <h2>Want to learn more?</h2>
+              <p>Regardless of how much a person learns about Web Development, the technologies is always changing. It's important that we understand that Web Development is a journey not a destination.</p>
+            </div>
+          </section>
+      
+                
+          <!-- Footer -->
+          <footer>
             <p>INFS-3800</p>
-        </footer>
+          </footer>
+      
 
     </div>
-    </body>
+    <!-- Wrapper Ends -->
+
+</body>
 </html>
