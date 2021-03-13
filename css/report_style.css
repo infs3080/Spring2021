@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navitem{
+    border: solid 2px grey;
+    box-shadow: 0px 1px 5px rgba(104, 104, 104, 0.8);
+    text-align: center;
+}
+
+.showcase {
+    background: url(https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    min-height: 275px;
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
+}
+
+.showcase h1{
+    color: white;
+    padding-top: 100px;
+    padding-left: 50px;
+}
+
+.table-format{
+  margin: 25px;
+}
+
+/* Footer CSS */
+footer {
+    background: #5e5c5c;
+    color: #ffffff;
+    text-align: center;
+    margin: 5px;
+    
+}
