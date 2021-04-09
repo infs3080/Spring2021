@@ -17,7 +17,7 @@
     <nav class="main-nav">
         <ul>
             <li><a href="index.html">HOME</a></li>
-            <li><a href="#">Picture Gallery</a></li>
+            <li><a href="gallery.php">Picture Gallery</a></li>
             <li><a href="contact.php">Contact</a></li>
             <li><a href="reports.php">Reports</a></li>
         </ul>
