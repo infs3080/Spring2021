@@ -71,5 +71,11 @@
             ?>
         </div>
     </section>
+
+    <!--Footer-->
+    <footer>
+        <p>INFS-3800</p>
+     </footer>
+
 </body>
 </html>
