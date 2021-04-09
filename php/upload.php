@@ -1,6 +1,7 @@
 <?php
     require_once("dbconnect.php");
 
+    // If the upload button is clicked
     if (isset($_POST['upload'])) {
         $file = $_FILES['img_upload'];
 
@@ -14,38 +15,39 @@
         $fileError = $_FILES['img_upload']['error'];
         $fileType = $_FILES['img_upload']['type'];
 
-        // Explode the filename from extension
+        //Explode filename from extension
         $fileExt = explode('.', $fileName);
 
-        //Get the lower case version of the file extension
+        //Get lowercase values for extension
         $fileActualExt = strtolower(end($fileExt));
 
-        //What specific file types do you want to allow
+        //Specify the file types allowed
         $allowed = array('jpg', 'jpeg', 'png');
 
-
-        // Does the file have the appropriate extension for upload
         if (in_array($fileActualExt, $allowed)) {
             if ($fileError === 0) {
                 if ($fileSize < 7000000) {
                     $fileNameNew = uniqid('', true). ".".$fileActualExt;
-                    // If uploading to local directory
-                    $fileDestination = 'uploads/' .$fileNameNew;
 
-                    // If uploading to a database
-                    // $query = "insert into images (image) values ('$fileNameNew');";
-                    // $fileDestination = mysqli_query($conn, $query);
-                    
+                    // Location where files will be stored on the server
+                    $fileDestination = '../uploads/'.$fileNameNew;
+
+                    // If you are uploading to a database
+                    //$query = "insert into images (image) values ('$fileNameNew')";
+                    //$fileDestination = mysqli_query($conn, $query);
+
                     move_uploaded_file($fileTmpName, $fileDestination);
-                    
-                    header("Location: ../gallery.php?uploadsucess");
+
+                    // Location we navigate to after processing
+                    header("Location: ../gallery.php");
                 } else {
                     echo "File is too large!";
-                }
+                    }
             } else {
-                echo "There was an error uploading file!";
-            }
-        } else {
+                echo "There was an error uploading";
+                }
+        }   else {
             echo "Wrong file type!";
-        }
+            }
     }
+    ?>
