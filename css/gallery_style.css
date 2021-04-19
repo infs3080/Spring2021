@@ -1,0 +1,32 @@
+/* Performing Clearfix */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Aligning form input */
+form {
+    margin-left: 10px;
+}
+
+.gallery_detail img {
+    width: minmax(200px, auto);
+    height: 200px;
+    float: left;
+    position: relative;
+    transition: 1s;
+    border-radius: 3px;
+    margin: 0px 10px;
+    box-shadow: 0px 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+.gallery_detail img:hover {
+    filter: grayscale();
+    transform: scale(1.1);
+}
+
+.thumbnails {
+    float: left;
+    position: relative;
+    margin: 5px;
+}
